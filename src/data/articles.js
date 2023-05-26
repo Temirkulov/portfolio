@@ -2,10 +2,10 @@ import React from "react";
 
 function article_1() {
 	return {
-		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
+		date: "May 2023",
+		title: "Article 1",
 		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"This is a sample text for Article 1. To be filled later.",
 		style: `
 				.article-content {
 					display: flex;
@@ -22,11 +22,11 @@ function article_1() {
 			<React.Fragment>
 				<div className="article-content">
 					<div className="paragraph">Content of article 1</div>
-					<img
+					{/* <img
 						src="https://picsum.photos/200/300"
 						alt="random"
 						className="randImage"
-					/>
+					/> */}
 				</div>
 			</React.Fragment>
 		),
@@ -35,10 +35,10 @@ function article_1() {
 
 function article_2() {
 	return {
-		date: "7 May 2023",
-		title: "Artificial Intelligence in Healthcare",
+		date: "June 2023",
+		title: "Article 2",
 		description:
-			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
+			"This is sample text for Article 2, which I will write on later as I expand my knowledge and share my perspective.",
 		style: ``,
 		body: (
 			<React.Fragment>

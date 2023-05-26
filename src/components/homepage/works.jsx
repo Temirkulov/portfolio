@@ -13,7 +13,7 @@ const Works = () => {
 				title="Work"
 				body={
 					<div className="works-body">
-						<div className="work">
+						{/* <div className="work">
 							<img
 								src="./facebook.png"
 								alt="facebook"
@@ -24,9 +24,9 @@ const Works = () => {
 								Software Engineer
 							</div>
 							<div className="work-duration">2019 - Present</div>
-						</div>
+						</div> */}
 
-						<div className="work">
+						{/* <div className="work">
 							<img
 								src="./twitter.png"
 								alt="twitter"
@@ -37,7 +37,7 @@ const Works = () => {
 								Software Engineer
 							</div>
 							<div className="work-duration">2019 - Present</div>
-						</div>
+						</div> */}
 					</div>
 				}
 			/>
