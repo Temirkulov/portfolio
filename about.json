@@ -3,10 +3,11 @@
   "title": "Computer Science Student | Robotics & AI Developer",
   "location": "Kuala Lumpur, Malaysia",
   "summary": "Final-year Computer Science student focused on robotics, AI systems, automation, and embedded engineering.",
+  "profileImage": "./assets/ProfilePhoto.jpg",
   "links": {
     "github": "https://github.com/Temirkulov",
-    "linkedin": "https://linkedin.com/in/widzmak",
-    "email": "mailto:mirkamol@kulov.dev"
+    "linkedin": "https://linkedin.com/in/your-linkedin",
+    "email": "mailto:mirkosht1@gmail.com"
   },
   "skills": [
     "Python",
@@ -20,14 +21,21 @@
   ],
   "projects": [
     {
-      "name": "Quadruped Robot",
-      "description": "A quadruped legged robot platform using servo actuation, IMU feedback, and Jetson-based high-level control.",
-      "tech": ["Jetson Orin Nano", "STM32", "PCA9685", "ROS 2"],
-      "link": ""
+        "name": "Quadruped Robot",
+        "description": "A quadruped legged robot platform using servo actuation, IMU feedback, and Jetson-based high-level control.",
+        "details": "Designed as a robotics research platform combining embedded control, sensor feedback, and high-level AI/ROS-based planning. The system uses STM32-level control for low-level motor behavior and Jetson-based computation for higher-level processing. The goal is to create a modular legged robotics platform that can later support autonomous navigation, stabilization, and research testing.",
+        "tech": ["Jetson Orin Nano", "STM32", "PCA9685", "ROS 2"],
+        "images": [
+        "./assets/projects/quadruped-1.jpg",
+        "./assets/projects/quadruped-2.jpg"
+        ],
+        "github": "https://github.com/Temirkulov/your-repo",
+        "demo": ""
     },
     {
       "name": "Garbage Segmentation System",
       "description": "Computer vision system for detecting and classifying waste objects for automated sorting.",
+      "details": "A vision-based waste classification and segmentation system intended for smart garbage sorting. The system focuses on identifying different types of waste and supporting automated disposal decisions.",
       "tech": ["Python", "YOLO", "Image Segmentation", "OpenCV"],
       "link": ""
     }
@@ -37,6 +45,7 @@
       "role": "Digital Intern",
       "company": "Evonik",
       "period": "2026",
+      "logo": "./assets/evonik-logo.png",
       "description": "Worked on Power BI dashboards and automation opportunities for Transportation Management IT support."
     }
   ]

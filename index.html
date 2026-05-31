@@ -1,28 +1,64 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+    <div class="hero-content">
+        <div>
+        <p class="eyebrow" id="location"></p>
+        <h1 id="name"></h1>
+        <h2 id="title"></h2>
+        <p id="summary"></p>
 
-<html>
-    <body>
-        <h1 style="text-align:center">
-            Portfolio
-        </h1>
-        <h2>
-            <u>About me</u>
-        </h2>
-        <p1>
-            - Intern at Evonik.
-            <br>
-            - Head of Department at Sunway Robotics.
-            <br>
-            - Legged and Humanoid Robotics.
-        </p1>
-        <h3>
-            <u>Projects</u>
-        </h3>
-        <p2>
-            <h4>Legged Robot</h4>
-            <br>- Participated in UROCK 2025
-            <br>- Achieved Self Balance and Obstacle Avoidance
-        </p2>
-    </body>
+        <div class="links" id="links"></div>
+        </div>
 
+        <div class="profile-frame">
+        <img id="profile-image" src="./assets/ProfilePhoto.jpg" alt="Profile photo" />
+        </div>
+    </div>
+    </section>
+
+    <section>
+      <h3>Skills</h3>
+      <div class="skills" id="skills"></div>
+    </section>
+
+    <section>
+      <h3>Projects</h3>
+      <div class="grid" id="projects"></div>
+    </section>
+
+    <section>
+      <h3>Experience</h3>
+      <div id="experience"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+<div class="modal" id="project-modal">
+  <div class="modal-content">
+    <button class="modal-close" id="modal-close">&times;</button>
+
+    <h3 id="modal-title"></h3>
+    <p id="modal-description"></p>
+
+    <div class="modal-images" id="modal-images"></div>
+
+    <p class="tech" id="modal-tech"></p>
+
+    <div class="modal-actions">
+      <a id="modal-github" href="#" target="_blank">GitHub Repository</a>
+      <a id="modal-demo" href="#" target="_blank">Live Demo</a>
+    </div>
+  </div>
+</div>
+</body>
 </html>
