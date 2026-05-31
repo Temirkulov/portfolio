@@ -1,0 +1,43 @@
+{
+  "name": "Mirkamol Temirkulov",
+  "title": "Computer Science Student | Robotics & AI Developer",
+  "location": "Kuala Lumpur, Malaysia",
+  "summary": "Final-year Computer Science student focused on robotics, AI systems, automation, and embedded engineering.",
+  "links": {
+    "github": "https://github.com/Temirkulov",
+    "linkedin": "https://linkedin.com/in/widzmak",
+    "email": "mailto:mirkamol@kulov.dev"
+  },
+  "skills": [
+    "Python",
+    "JavaScript",
+    "ROS 2",
+    "Arduino",
+    "STM32",
+    "Computer Vision",
+    "Power BI",
+    "Fusion 360"
+  ],
+  "projects": [
+    {
+      "name": "Quadruped Robot",
+      "description": "A quadruped legged robot platform using servo actuation, IMU feedback, and Jetson-based high-level control.",
+      "tech": ["Jetson Orin Nano", "STM32", "PCA9685", "ROS 2"],
+      "link": ""
+    },
+    {
+      "name": "Garbage Segmentation System",
+      "description": "Computer vision system for detecting and classifying waste objects for automated sorting.",
+      "tech": ["Python", "YOLO", "Image Segmentation", "OpenCV"],
+      "link": ""
+    }
+  ],
+  "experience": [
+    {
+      "role": "Digital Intern",
+      "company": "Evonik",
+      "period": "2026",
+      "description": "Worked on Power BI dashboards and automation opportunities for Transportation Management IT support."
+    }
+  ]
+}
