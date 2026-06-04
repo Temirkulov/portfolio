@@ -4,25 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
   <main class="container">
     <section class="hero">
-    <div class="hero-content">
+      <div class="hero-content">
         <div>
-        <p class="eyebrow" id="location"></p>
-        <h1 id="name"></h1>
-        <h2 id="title"></h2>
-        <p id="summary"></p>
+          <p class="eyebrow" id="location"></p>
+          <h1 id="name"></h1>
+          <h2 id="title"></h2>
+          <p id="summary"></p>
 
-        <div class="links" id="links"></div>
+          <div class="links" id="links"></div>
         </div>
 
         <div class="profile-frame">
-        <img id="profile-image" src="./assets/ProfilePhoto.jpg" alt="Profile photo" />
+          <img id="profile-image" src="./assets/ProfilePhoto.jpg" alt="Profile photo" />
         </div>
-    </div>
+      </div>
     </section>
 
     <section>
@@ -41,24 +42,24 @@
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <div class="modal" id="project-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">&times;</button>
 
-<div class="modal" id="project-modal">
-  <div class="modal-content">
-    <button class="modal-close" id="modal-close">&times;</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
 
-    <h3 id="modal-title"></h3>
-    <p id="modal-description"></p>
+      <div class="modal-images" id="modal-images"></div>
 
-    <div class="modal-images" id="modal-images"></div>
+      <p class="tech" id="modal-tech"></p>
 
-    <p class="tech" id="modal-tech"></p>
-
-    <div class="modal-actions">
-      <a id="modal-github" href="#" target="_blank">GitHub Repository</a>
-      <a id="modal-demo" href="#" target="_blank">Live Demo</a>
+      <div class="modal-actions">
+        <a id="modal-github" href="#" target="_blank">GitHub Repository</a>
+        <a id="modal-demo" href="#" target="_blank">Live Demo</a>
+      </div>
     </div>
   </div>
-</div>
+
+  <script src="./script.js" defer></script>
 </body>
 </html>

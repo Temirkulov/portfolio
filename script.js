@@ -16,6 +16,7 @@ async function loadPortfolio() {
     document.getElementById("summary").textContent = data.summary;
 
     const profileImage = document.getElementById("profile-image");
+
     if (data.profileImage) {
       profileImage.src = data.profileImage;
     }
@@ -42,6 +43,7 @@ function renderLinks(linksData) {
 
   Object.entries(linksData).forEach(([label, url]) => {
     const a = document.createElement("a");
+
     a.href = url;
     a.target = label === "email" ? "_self" : "_blank";
     a.className = "link-button";
@@ -73,6 +75,7 @@ function renderProjects(projectsData) {
 
   projectsData.forEach(project => {
     const card = document.createElement("article");
+
     card.className = "card project-card";
     card.tabIndex = 0;
 
@@ -100,6 +103,7 @@ function renderExperience(experienceData) {
 
   experienceData.forEach(item => {
     const card = document.createElement("article");
+
     card.className = "card experience-card";
 
     card.innerHTML = `
@@ -109,11 +113,13 @@ function renderExperience(experienceData) {
             ? `<img class="company-logo" src="${item.logo}" alt="${item.company} logo" />`
             : ""
         }
+
         <div>
           <h4>${item.role} — ${item.company}</h4>
           <p class="tech">${item.period}</p>
         </div>
       </div>
+
       <p>${item.description}</p>
     `;
 
@@ -135,8 +141,10 @@ function openProjectModal(project) {
   if (project.images && project.images.length > 0) {
     project.images.forEach(imagePath => {
       const img = document.createElement("img");
+
       img.src = imagePath;
       img.alt = `${project.name} image`;
+
       imagesContainer.appendChild(img);
     });
   }

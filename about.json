@@ -1,21 +1,21 @@
 {
   "name": "Mirkamol Temirkulov",
-  "title": "Computer Science Student | Robotics & AI Developer",
+  "title": "Computer Science Student | Robotics & AI Engineer",
   "location": "Kuala Lumpur, Malaysia",
   "summary": "Final-year Computer Science student focused on robotics, AI systems, automation, and embedded engineering.",
   "profileImage": "./assets/ProfilePhoto.jpg",
   "links": {
     "github": "https://github.com/Temirkulov",
-    "linkedin": "https://linkedin.com/in/your-linkedin",
-    "email": "mailto:mirkosht1@gmail.com"
+    "linkedin": "https://linkedin.com/in/widzmak",
+    "email": "mailto:mirkamol@kulov.dev"
   },
   "skills": [
     "Python",
     "JavaScript",
     "ROS 2",
-    "Arduino",
+    "N8N",
     "STM32",
-    "Computer Vision",
+    "OpenCV",
     "Power BI",
     "Fusion 360"
   ],
@@ -32,13 +32,15 @@
         "github": "https://github.com/Temirkulov/your-repo",
         "demo": ""
     },
-    {
-      "name": "Garbage Segmentation System",
-      "description": "Computer vision system for detecting and classifying waste objects for automated sorting.",
-      "details": "A vision-based waste classification and segmentation system intended for smart garbage sorting. The system focuses on identifying different types of waste and supporting automated disposal decisions.",
-      "tech": ["Python", "YOLO", "Image Segmentation", "OpenCV"],
-      "link": ""
-    }
+   {
+  "name": "Garbage Segmentation System",
+  "description": "Computer vision system for detecting and classifying waste objects for automated sorting.",
+  "details": "A vision-based waste classification and segmentation system intended for smart garbage sorting. The system focuses on identifying different types of waste and supporting automated disposal decisions.",
+  "tech": ["Python", "YOLO", "Image Segmentation", "OpenCV"],
+  "images": [],
+  "github": "",
+  "demo": ""
+}
   ],
   "experience": [
     {
@@ -47,6 +49,14 @@
       "period": "2026",
       "logo": "./assets/evonik-logo.png",
       "description": "Worked on Power BI dashboards and automation opportunities for Transportation Management IT support."
+    },
+    {
+      "role": "Research Assistant",
+      "company": "Sunway University Faculty of Engineering",
+      "period": "2024-2026",
+      "logo": "./assets/fet-logo.jpeg",
+      "description": "Conducted research on computer vision and machine learning applications in robotics, contributing to published papers and conference presentations."
     }
   ]
 }
+
