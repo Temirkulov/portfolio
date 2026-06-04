@@ -1,0 +1,72 @@
+/* link css */
+
+.links {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.link-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #334155;
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: #38bdf8;
+  text-decoration: none;
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.link-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(56, 189, 248, 0.12);
+  opacity: 0;
+  transition: opacity 0.22s ease;
+}
+
+.link-button img,
+.link-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.link-button img {
+  width: 18px;
+  height: 18px;
+  filter: invert(64%) sepia(91%) saturate(1284%) hue-rotate(161deg) brightness(101%) contrast(94%);
+  transition: transform 0.22s ease;
+}
+
+.link-button:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+  background-color: rgba(56, 189, 248, 0.08);
+  box-shadow: 0 12px 32px rgba(56, 189, 248, 0.18);
+}
+
+.link-button:hover::before {
+  opacity: 1;
+}
+
+.link-button:hover img {
+  transform: scale(1.08);
+}
+
+.link-button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+.link-button:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 4px;
+}
