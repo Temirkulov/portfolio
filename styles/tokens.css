@@ -1,0 +1,24 @@
+/* this file is for design tokens like colors, fonts, spacing, etc. */
+
+:root {
+  --color-bg: #0f172a;
+  --color-surface: #111827;
+  --color-surface-soft: #1e293b;
+  --color-border: #334155;
+  --color-text: #e5e7eb;
+  --color-muted: #94a3b8;
+  --color-accent: #38bdf8;
+
+  --radius-card: 18px;
+  --radius-pill: 999px;
+
+  --shadow-glow: 0 16px 40px rgba(56, 189, 248, 0.12);
+  --container: 1000px;
+}
+
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
