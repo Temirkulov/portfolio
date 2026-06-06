@@ -32,6 +32,24 @@
         "github": "https://github.com/Temirkulov/your-repo",
         "demo": ""
     },
+    {
+  "name": "Automated N8N Workflow System",
+  "description": "A system for automating data processing and task management using N8N workflows.",
+  "details": "Designed and implemented an automated workflow system using N8N to streamline data processing and task management. The system integrates various APIs and services to automate repetitive tasks, improve efficiency, and enable seamless data flow across different platforms.",
+  "tech": ["N8N", "JavaScript", "API Integration"],
+  "images": [],
+  "github": "",
+  "demo": ""
+    },
+    {
+      "name": "Humanoid Head with Integrated AI",
+      "description": "A humanoid head prototype featuring integrated AI for facial recognition and expression generation.",
+      "details": "This project involves designing and implementing a humanoid head with integrated artificial intelligence capabilities. The system focuses on facial recognition and expression generation, utilizing advanced computer vision and machine learning techniques.",
+      "tech": ["Python", "OpenCV", "TensorFlow", "Facial Recognition", "Expression Generation", "3D Printing"],
+      "images": [],
+      "github": "",
+      "demo": ""
+    },
    {
   "name": "Garbage Segmentation System",
   "description": "Computer vision system for detecting and classifying waste objects for automated sorting.",
