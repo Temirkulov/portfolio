@@ -1,20 +1,30 @@
 /* this file is for design tokens like colors, fonts, spacing, etc. */
 
 :root {
-  --color-bg: ...;
-  --color-surface: ...;
-  --color-border: ...;
-  --color-text: ...;
-  --color-muted: ...;
-  --color-accent: ...;
+  --color-bg: #0f172a;
+  --color-surface: #111827;
+  --color-surface-hover: #162033;
+  --color-border: #334155;
+  --color-text: #e5e7eb;
+  --color-muted: #94a3b8;
+  --color-accent: #38bdf8;
+  --color-white: #ffffff;
 
-  --radius-card: ...;
-  --radius-pill: ...;
+  --font-serif: "MyFont", serif;
 
-  --shadow-card: ...;
-  --shadow-glow: ...;
+  --container: 1000px;
 
-  --space-sm: ...;
-  --space-md: ...;
-  --space-lg: ...;
+  --radius-card: 18px;
+  --radius-pill: 999px;
+  --radius-image: 14px;
+
+  --shadow-card: 0 16px 40px rgba(56, 189, 248, 0.12);
+  --shadow-profile: 0 20px 60px rgba(0, 0, 0, 0.25);
+  --shadow-modal: 0 30px 80px rgba(0, 0, 0, 0.35);
+
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 36px;
+  --space-xl: 48px;
 }
