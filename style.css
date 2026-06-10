@@ -1,69 +1,16 @@
-@import "./styles/sections/hero.css";
-@import "./styles/sections/links.css";
-@import "./styles/sections/skills.css";
-@import "./styles/sections/projects.css";
-@import "./styles/sections/experience.css";
-@import "./styles/sections/contact.css";
-@import "./styles/components/cards.css";
-@import "./styles/components/modal.css";
+@import "./styles/tokens.css";
 @import "./styles/base.css";
 @import "./styles/layout.css";
+
+@import "./styles/components/buttons.css";
+@import "./styles/components/cards.css";
+@import "./styles/components/chips.css";
+@import "./styles/components/modal.css";
+
+@import "./styles/sections/hero.css";
+@import "./styles/sections/projects.css";
+@import "./styles/sections/experience.css";
+@import "./styles/sections/skills.css";
+@import "./styles/sections/contact.css";
+
 @import "./styles/responsive.css";
-@import "./styles/tokens.css";
-
-/* HERO */
-
-
-/* LINKS */
-
-
-/* SECTIONS */
-
-section {
-  margin-top: 36px;
-}
-
-.hero + section {
-  margin-top: 8px;
-}
-
-h3 {
-  font-size: 1.5rem;
-  margin-top: 0;
-  border-bottom: 1px solid #334155;
-  padding-bottom: 8px;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill {
-  background: #1e293b;
-  padding: 8px 12px;
-  border-radius: 999px;
-  font-size: 0.9rem;
-}
-
-/* CARDS */
-
-/* EXPERIENCE */
-
-/* MODAL */
-
-
-/* MOBILE */
-
-@media (max-width: 760px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-  }
-
-  .profile-frame {
-    width: 160px;
-    height: 160px;
-    order: -1;
-  }
-}
