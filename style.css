@@ -423,3 +423,119 @@ main p {
     scroll-behavior: auto;
   }
 }
+
+/* Tighter spacing */
+
+body {
+  line-height: 1.5;
+}
+
+.page-layout {
+  column-gap: 40px;
+  padding-top: 32px;
+}
+
+main section + section {
+  margin-top: 28px;
+}
+
+main h2 {
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+.news-list {
+  gap: 9px;
+}
+
+.entry + .entry {
+  margin-top: 16px;
+  padding-top: 16px;
+}
+
+.entry-heading {
+  margin-bottom: 3px;
+}
+
+.entry p {
+  margin-bottom: 6px;
+}
+
+.entry > :last-child {
+  margin-bottom: 0;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.project-links:empty {
+  display: none;
+}
+
+/* Compact mobile profile */
+
+@media (max-width: 650px) {
+  .page-layout {
+    column-gap: 0;
+    row-gap: 26px;
+    padding-top: 22px;
+  }
+
+  .profile {
+    display: grid;
+    grid-template-columns: 104px minmax(0, 1fr);
+    grid-template-areas:
+      "photo name"
+      "photo university"
+      "links links";
+    column-gap: 18px;
+    row-gap: 4px;
+    align-items: start;
+  }
+
+  .profile-photo {
+    grid-area: photo;
+    width: 104px;
+    margin: 0;
+  }
+
+  .profile h1 {
+    grid-area: name;
+    align-self: end;
+    margin: 0;
+    font-size: clamp(21px, 5.5vw, 26px);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  .profile-university {
+    grid-area: university;
+    margin: 0;
+    font-size: 17px;
+  }
+
+  .profile-links {
+    grid-area: links;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin-top: 12px;
+  }
+
+  .profile-links li:first-child {
+    flex-basis: 100%;
+  }
+
+  main h2 {
+    font-size: 26px;
+  }
+}

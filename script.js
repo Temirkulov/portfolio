@@ -51,6 +51,26 @@ function createExternalLink(label, url) {
   }
 }
 
+function createProjectLinks(project) {
+  const links = createElement("div", "project-links");
+
+  const destinations = [
+    ["GitHub", project.github],
+    ["Project Page", project.projectUrl],
+    ["Live Demo", project.demo]
+  ];
+
+  destinations.forEach(([label, url]) => {
+    if (!url || url.includes("/your-repo")) return;
+
+    const link = createExternalLink(label, url);
+
+    if (link) links.append(link);
+  });
+
+  return links;
+}
+
 function renderExperience(items) {
   const container = document.getElementById("experience-list");
   container.replaceChildren();
@@ -121,6 +141,7 @@ function renderProjects(items) {
       );
     }
 
+    article.append(createProjectLinks(project));
     container.append(article);
   });
 }
@@ -152,17 +173,7 @@ function openProjectModal(project) {
   });
 
   const actions = document.getElementById("modal-actions");
-  actions.replaceChildren();
-
-  // The current quadruped repository URL is still a placeholder.
-  if (project.github && !project.github.includes("/your-repo")) {
-    const repository = createExternalLink("GitHub", project.github);
-    if (repository) actions.append(repository);
-  }
-
-  const demo = createExternalLink("Live Demo", project.demo);
-  if (demo) actions.append(demo);
-
+  actions.replaceChildren(createProjectLinks(project));
   modal.showModal();
   modal.scrollTop = 0;
 }

@@ -21,7 +21,7 @@
   ],
   "projects": [
     {
-        "name": "Quadruped Robot",
+        "name": "GreyHound Quadruped Robot",
         "description": "A quadruped legged robot platform using servo actuation, IMU feedback, and Jetson-based high-level control.",
         "details": "Designed as a robotics research platform combining embedded control, sensor feedback, and high-level AI/ROS-based planning. The system uses STM32-level control for low-level motor behavior and Jetson-based computation for higher-level processing. The goal is to create a modular legged robotics platform that can later support autonomous navigation, stabilization, and research testing.",
         "tech": ["Jetson Orin Nano", "STM32", "PCA9685", "ROS 2"],
@@ -29,7 +29,7 @@
         "./assets/projects/quadruped-1.jpg",
         "./assets/projects/quadruped-2.jpg"
         ],
-        "github": "https://github.com/Temirkulov/your-repo",
+        "github": "https://github.com/Temirkulov/Greyhound",
         "demo": ""
     },
     {
