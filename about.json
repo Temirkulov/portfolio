@@ -3,7 +3,7 @@
   "title": "Computer Science Student | Robotics & AI Engineer",
   "location": "Kuala Lumpur, Malaysia",
   "summary": "Final-year Computer Science student focused on robotics, AI systems, automation, and embedded engineering.",
-  "profileImage": "./assets/ProfilePhoto.jpg",
+  "profileImage": "./assets/ProfilePhoto.jpeg",
   "links": {
     "github": "https://github.com/Temirkulov",
     "linkedin": "https://linkedin.com/in/widzmak",
@@ -77,4 +77,3 @@
     }
   ]
 }
-
