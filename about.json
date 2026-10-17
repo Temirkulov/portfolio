@@ -62,18 +62,18 @@
   ],
   "experience": [
     {
-      "role": "Digital Intern",
-      "company": "Evonik",
-      "period": "2026",
-      "logo": "./assets/evonik-logo.png",
-      "description": "Worked on Power BI dashboards and automation opportunities for Transportation Management IT support."
-    },
-    {
       "role": "Research Assistant",
       "company": "Sunway University Faculty of Engineering",
-      "period": "2024-2026",
+      "period": "12/2024 - 09/2026",
       "logo": "./assets/fet-logo.jpeg",
       "description": "Conducted research on computer vision and machine learning applications in robotics, contributing to published papers and conference presentations."
+    },
+    {
+      "role": "Digital Intern",
+      "company": "Evonik",
+      "period": "02/26 - 05/2026",
+      "logo": "./assets/evonik-logo.png",
+      "description": "Worked on Power BI dashboards and automation opportunities for Transportation Management IT support."
     }
   ]
 }

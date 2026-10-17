@@ -3,64 +3,228 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+
+  <title>Mirkamol Temirkulov</title>
+  <meta
+    name="description"
+    content="Mirkamol Temirkulov — Computer Science graduate working in AI, software, and robotics."
+  />
+
   <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
-  <main class="container">
-    <section class="hero">
-      <div class="hero-content">
-        <div>
-          <p class="eyebrow" id="location"></p>
-          <h1 id="name"></h1>
-          <h2 id="title"></h2>
-          <p id="summary"></p>
+  <!-- Reusable icons -->
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon-definitions"
+    aria-hidden="true"
+  >
+    <symbol id="icon-location" viewBox="0 0 24 24">
+      <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </symbol>
 
-          <div class="links" id="links"></div>
+    <symbol id="icon-document" viewBox="0 0 24 24">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+      <path d="M14 2v6h6M8 13h8M8 17h6" />
+    </symbol>
+
+    <symbol id="icon-email" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="m3 7 9 6 9-6" />
+    </symbol>
+
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <path d="M7 10v7M11 17v-7M11 13a3 3 0 0 1 6 0v4" />
+      <circle cx="7" cy="7" r=".7" />
+    </symbol>
+
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path
+        d="M9 19c-4 1-4-2-6-2m12 5v-4a3.5 3.5 0 0 0-1-2.7
+           c3.3-.4 6.8-1.6 6.8-7.3A5.7 5.7 0 0 0 19.3 4
+           a5.3 5.3 0 0 0-.1-4s-1.3-.4-4.2 1.5
+           a14.4 14.4 0 0 0-7 0C5.1-.4 3.8 0 3.8 0
+           a5.3 5.3 0 0 0-.1 4A5.7 5.7 0 0 0 2.2 8
+           c0 5.7 3.5 6.9 6.8 7.3A3.5 3.5 0 0 0 8 18v4"
+        transform="translate(1 1) scale(.9)"
+      />
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">About Me</a>
+      <a href="#news">News</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <div class="page-layout">
+    <aside class="profile" aria-labelledby="profile-name">
+      <img
+        class="profile-photo"
+        src="./assets/ProfilePhoto.jpeg"
+        alt="Mirkamol Temirkulov"
+        width="200"
+        height="200"
+      />
+
+      <h1 id="profile-name">Mirkamol Temirkulov</h1>
+      <p class="profile-university">Sunway University</p>
+
+      <ul class="profile-links">
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use href="#icon-location"></use>
+          </svg>
+          <span>Kuala Lumpur, Malaysia</span>
+        </li>
+
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use href="#icon-document"></use>
+          </svg>
+          <a href="./assets/Mirkamol_Temirkulov_CV.pdf">CV</a>
+        </li>
+
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use href="#icon-email"></use>
+          </svg>
+          <a href="mailto:mirkamol@kulov.dev">Email</a>
+        </li>
+
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use href="#icon-linkedin"></use>
+          </svg>
+          <a
+            href="https://www.linkedin.com/in/widzmak/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >LinkedIn</a>
+        </li>
+
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use href="#icon-github"></use>
+          </svg>
+          <a
+            href="https://github.com/Temirkulov"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main id="main-content" tabindex="-1">
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
+
+        <p>
+          I am a Computer Science graduate from Sunway University,
+          interested in artificial intelligence, software engineering,
+          and robotics.
+        </p>
+
+        <p>
+          My experience spans embedded systems, computer vision,
+          automation, and building robotic platforms. I am currently
+          deepening my foundations in mathematics, machine learning,
+          and algorithms, with an interest in developing intelligent
+          systems.
+        </p>
+      </section>
+
+      <section id="news" aria-labelledby="news-heading">
+        <h2 id="news-heading">News</h2>
+
+        <ul class="news-list">
+          <li>
+            <span class="news-date">Aug 2026</span>
+            <span>
+              Completed my BSc in Computer Science at Sunway University
+              with First Class Honours.
+            </span>
+          </li>
+
+          <li>
+            <span class="news-date">Aug 2026</span>
+            <span>
+              My quadruped robot was selected among the Top 10 capstone
+              projects out of approximately 300 graduating projects.
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+
+        <article class="entry">
+          <div class="entry-heading">
+            <h3>Sunway University</h3>
+            <span class="entry-date">Completed Aug 2026</span>
+          </div>
+
+          <p>Bachelor of Science in Computer Science</p>
+          <p class="entry-meta">
+            CGPA: 3.8/4.0 · First Class Honours · Five Dean’s List awards
+          </p>
+        </article>
+      </section>
+
+      <section id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
+
+        <!-- Replace this paragraph with your verified publication details. -->
+        <p class="muted">Publication details will be added here.</p>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <div id="experience-list" aria-live="polite">
+          <p class="muted">Loading experience…</p>
         </div>
+      </section>
 
-        <div class="profile-frame">
-          <img id="profile-image" src="./assets/ProfilePhoto.jpeg" alt="Profile photo" />
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <div id="projects-list" aria-live="polite">
+          <p class="muted">Loading projects…</p>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+  </div>
 
-    <section>
-      <h3>Projects</h3>
-      <div class="grid" id="projects"></div>
-    </section>
-
-    <section>
-      <h3>Experience</h3>
-      <div id="experience"></div>
-    </section>
-
-    <section>
-      <h3>Skills</h3>
-      <div class="skills" id="skills"></div>
-    </section>
-
-  </main>
-
-  <div class="modal" id="project-modal">
+  <dialog id="project-modal" aria-labelledby="modal-title">
     <div class="modal-content">
-      <button class="modal-close" id="modal-close">&times;</button>
+      <button
+        class="modal-close"
+        id="modal-close"
+        type="button"
+        aria-label="Close project details"
+        autofocus
+      >×</button>
 
-      <h3 id="modal-title"></h3>
+      <h2 id="modal-title"></h2>
       <p id="modal-description"></p>
 
       <div class="modal-images" id="modal-images"></div>
 
-      <p class="tech" id="modal-tech"></p>
-
-      <div class="modal-actions">
-        <a id="modal-github" href="#" target="_blank">GitHub Repository</a>
-        <a id="modal-demo" href="#" target="_blank">Live Demo</a>
-      </div>
+      <p class="entry-meta" id="modal-tech"></p>
+      <div class="modal-actions" id="modal-actions"></div>
     </div>
-  </div>
-
-  <script src="./script.js" defer></script>
+  </dialog>
 </body>
 </html>
