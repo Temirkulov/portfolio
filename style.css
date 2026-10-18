@@ -539,3 +539,22 @@ main p {
     font-size: 26px;
   }
 }
+
+.visitor-map {
+  width: 100%;
+  max-width: 420px;
+  margin: 16px auto 0;
+}
+
+.visitor-map img,
+.visitor-map iframe,
+.visitor-map canvas,
+.visitor-map svg {
+  max-width: 100%;
+}
+
+.visitor-map img {
+  display: block;
+  height: auto;
+  margin-inline: auto;
+}
