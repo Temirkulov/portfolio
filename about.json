@@ -30,7 +30,10 @@
         "./assets/projects/quadruped-2.jpg"
         ],
         "github": "https://github.com/Temirkulov/Greyhound",
-        "demo": ""
+        "demo": "",
+        "video": "./assets/projects/quadruped.mp4",
+        "poster": "",
+        "videoCaption": "GreyHound quadruped robot demonstration."
     },
     {
   "name": "Automated N8N Workflow System",

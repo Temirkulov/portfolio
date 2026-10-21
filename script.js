@@ -100,6 +100,64 @@ function renderExperience(items) {
     container.append(article);
   });
 }
+function createProjectVideo(project) {
+  if (!project.video) return null;
+
+  const figure = createElement("figure", "project-media");
+  const video = createElement("video", "project-video");
+
+  video.controls = true;
+  video.muted = true;
+  video.defaultMuted = true;
+  video.loop = true;
+  video.playsInline = true;
+  video.preload = "metadata";
+
+  video.width = 960;
+  video.height = 540;
+
+  video.setAttribute("muted", "");
+  video.setAttribute("playsinline", "");
+  video.setAttribute(
+    "aria-label",
+    `${project.name} demonstration`
+  );
+
+  // Respect visitors who prefer reduced motion.
+  video.autoplay = !window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  if (project.poster) {
+    video.poster = project.poster;
+  }
+
+  video.src = project.video;
+
+  video.addEventListener("error", () => {
+    figure.replaceChildren(
+      createElement(
+        "p",
+        "muted",
+        "The demo video is currently unavailable."
+      )
+    );
+  }, { once: true });
+
+  figure.append(video);
+
+  if (project.videoCaption) {
+    figure.append(
+      createElement(
+        "figcaption",
+        "entry-meta",
+        project.videoCaption
+      )
+    );
+  }
+
+  return figure;
+}
 
 function renderProjects(items) {
   const container = document.getElementById("projects-list");
@@ -135,9 +193,19 @@ function renderProjects(items) {
       createElement("p", "", project.description)
     );
 
+    const media = createProjectVideo(project);
+
+    if (media) {
+      article.append(media);
+    }
+
     if (project.tech?.length) {
       article.append(
-        createElement("p", "entry-meta", project.tech.join(" · "))
+        createElement(
+          "p",
+          "entry-meta",
+          project.tech.join(" · ")
+        )
       );
     }
 
